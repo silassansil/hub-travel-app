@@ -7,7 +7,10 @@ export const toMap = createSelector(state, _state => _state.byId);
 export const toArray = createSelector(toMap, _byId => _.flatMap(_byId));
 
 export const excursionsByAgencyName = createSelector(toArray, AgencySelector.toMap,
-    (_all, _agencies) => _all.map(ex => _agencies[ex.agencyId]))
+    (_all, _agencies) => _all.map(ex => ({
+        ...ex,
+        name: _agencies[ex.agencyId].name,
+    })))
 
 // export const selectedId = createSelector(state, _state => _state.selectedId);
 // export const selected = createSelector(toMap, selectedId,

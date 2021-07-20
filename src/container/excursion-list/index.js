@@ -12,11 +12,11 @@ export default function ExcursionList(props) {
 
     return <div className="container">
         {
-            excursions.map((ex, index) =>
+            excursionsByAgencyName.map((ex, index) =>
                 <Paper key={index} classes={{ root: 'paper-root' }}>
                     <Grid container wrap="nowrap" spacing={2}>
                         <Grid item>
-                            <Avatar>W</Avatar>
+                            <Avatar>{ex.name.charAt(0)}</Avatar>
                         </Grid>
                         <Grid item xs>
                             <Typography>{ex.destination}</Typography>
