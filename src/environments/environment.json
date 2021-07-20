@@ -1,0 +1,4 @@
+{
+  "production": false,
+  "baseUrl": "https://5764mrlmbi.execute-api.sa-east-1.amazonaws.com/dev"
+}

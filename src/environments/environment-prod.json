@@ -1,0 +1,4 @@
+{
+  "production": true,
+  "baseUrl": "https://api.bagag.in"
+}

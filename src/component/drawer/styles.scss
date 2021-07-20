@@ -1,0 +1,11 @@
+.drawer {
+    width: 240px;
+    flex-shrink: 0;
+}
+.drawer-paper {
+    width: 240px;
+}
+
+.drawer-container {
+    overflow: 'auto',
+}
