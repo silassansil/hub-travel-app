@@ -5,10 +5,7 @@ import * as ExcursionSelectors from "../../store/excursion/selector";
 import './styles.scss';
 
 export default function ExcursionList(props) {
-
-    const excursions = useSelector(ExcursionSelectors.toArray)
     const excursionsByAgencyName = useSelector(ExcursionSelectors.excursionsByAgencyName)
-    console.log(excursionsByAgencyName, 'excursionsByAgencyName')
 
     return <div className="container">
         {
